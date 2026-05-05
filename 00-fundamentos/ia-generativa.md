@@ -173,17 +173,52 @@ A IA Generativa é baseada em modelos treinados com grandes volumes de dados:
   - Difusão reversa: Na etapa de difusão reversa subsequente, a imagem ruidosa é gradualmente introduzida na eliminação de ruído até que uma nova imagem seja gerada
     <img width="696" height="154" alt="image" src="https://github.com/user-attachments/assets/4c4cc81e-5b18-4afc-b09a-d7a9eb797bf4" />
 
+---
 
-### 🧩 Prompt (Prompt Engineering)
+### 📌 Modelos multimodais
+- Podem processar e gerar vários modos de dados simultaneamente
+  - Ex: pode receber uma imagem e algum texto como entrada e, em seguida, gerar uma nova imagem e uma legenda descrevendo-a como saída.
+- Aprendem como diferentes modalidades, imagens e texto, estão conectadas e podem influenciar umas às outras
+- Casos de uso:
+  - Automatizar a legendagem de vídeo
+  - Criar gráficos com base em instruções de texto
+  - Responder perguntas de forma mais inteligente combinando texto e informações visuais
+  - Traduzir conteúdo, mantendo os recursos visuais relevantes
+
+---
+
+### ❗ Outros modelos generativos
+#### Redes adversárias generativas (GANs)
+- São um tipo de modelo generativo que envolve duas redes neurais competindo entre si em uma estrutura de jogo de soma zero. As duas redes são geradoras e discriminadoras
+  - Geradora: gera novos dados sintéticos (por exemplo, imagens, texto ou áudio) pegando ruídos aleatórios como entrada e transformando-os em dados que se assemelham à distribuição de dados de treinamento
+  - Discriminadora: obtém dados reais do conjunto de treinamento e dados sintéticos gerados pela geradora como entrada. Seu objetivo é distinguir entre os dados reais e os gerados.
+- Durante o treinamento, a geradora tenta gerar dados que possam enganar a discriminadora, levando-a a pensar que são reais, enquanto a discriminadora tenta classificar corretamente os dados reais e os gerados.
+  - Esse processo contraditório continua até que a geradora produza dados indistinguíveis dos dados reais.
+
+---
+
+#### Codificadores automáticos variacionais (VAEs)
+- São um tipo de modelo generativo que combina ideias de codificadores automáticos (um tipo de rede neural) e inferência variacional (uma técnica da estatística bayesiana)
+- Consiste em duas partes:
+  - Codificadora: pega os dados de entrada (por exemplo, uma imagem) e os mapeia para um espaço latente de menor dimensão, que captura as características essenciais dos dados
+  - Decodificadora: pega a representação latente da codificadora e gera uma reconstrução dos dados de entrada originais
+- O principal aspecto dos VAEs é que o espaço latente é incentivado a seguir uma distribuição de probabilidade específica (geralmente uma distribuição gaussiana)
+  - Isso permite gerar novos dados por meio da amostragem desse espaço latente e da passagem das amostras pela decodificadora
+  
+---
+
+### 🧩 Engenharia de Prompt (Prompt Engineering)
 
 - Entrada fornecida ao modelo
 - Define o comportamento da resposta
-
-📌 Qualidade do prompt impacta diretamente o resultado
-
-- Ex:
+- Qualidade do prompt impacta diretamente o resultado. É muito importante para otimização
   - Prompt vago → resposta genérica
   - Prompt detalhado → resposta mais precisa
+- Contém os elementos:
+  - Instruções: é a tarefa para o FM realizar. É fornecida uma descrição da tarefa ou instruções sobre o desempenho do modelo
+  - Contexto: é a informação externa para orientar o modelo
+  - Dados de entrada: é a entrada para a qual você deseja obter uma resposta
+  - Indicador de saída: é o tipo ou formato de saída
 
 ---
 
@@ -207,17 +242,20 @@ A IA Generativa é baseada em modelos treinados com grandes volumes de dados:
 
 ---
 
-### 🔄 Fine-tuning vs RAG (Retrieval-Augmented Generation)
-
-#### Fine-tuning
-- Ajusta o modelo com dados específicos
-- Torna o modelo mais especializado
+### 🔄 Fine-tuning (Ajuste fino)
+- É um processo de aprendizado supervisionado que envolve usar um modelo pré-treinado e adicionar conjuntos de dados menores e específicos
+- Tem objetivo de melhorar o modelo de base, tornando-o mais especializado
+- Modifica os pesos dos dados para melhor alinhá-los à tarefa.
+- Há duas maneias de realizar o ajuste fino:
+  - Ajuste fino de instruções: usa exemplos de como o modelo deve responder a uma instrução específica. O ajuste de prompt é um tipo de ajuste fino de instruções
+  - Aprendizado por reforço com base no feedback humano (RLHF): fornece dados de feedback humano, resultando em um modelo mais alinhado às preferências humanas
 
 ---
 
-#### RAG
-- Combina:
-  - Modelo base
+### 🔄 Geração aumentada de recuperação (RAG ou Retrieval-Augmented Generation)
+- Técnica que fornece dados relevantes ao domínio como contexto para produzir respostas com base nesses dados
+- Recupera um pequeno conjunto de documentos relevantes e os usa para fornecer contexto e responder ao prompt do usuário
+- Não altera os pesos do modelo de base (diferentemente do ajuste fino)
   - Dados externos (ex: banco de dados)
 - Busca informações em tempo real
 
