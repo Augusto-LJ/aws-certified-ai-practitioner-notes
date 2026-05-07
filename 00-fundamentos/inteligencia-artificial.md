@@ -1,0 +1,58 @@
+# 🤖 Fundamentos de Inteligência Artificial (Artificial Intelligence - AI)
+
+## 📌 O que é
+
+Inteligência Artificial é um campo amplo que engloba o desenvolvimento de sistemas inteligentes capazes de realizar tarefas que, normalmente, requerem inteligência humana
+
+📌 Essas tarefas incluem:
+- Tomada de decisão
+- Reconhecimento de padrões
+- Compreensão de linguagem
+- Resolução de problemas
+
+---
+
+## 🎯 Quando usar
+
+- Quando é necessário automatizar decisões
+- Quando há grande volume de dados
+- Quando regras fixas não são suficientes
+
+- Ex:
+  - Chatbots
+  - Recomendação de produtos
+  - Reconhecimento de imagem
+  - Assistentes virtuais
+
+---
+
+## ⚙️ Como funciona
+
+A IA utiliza:
+- Dados
+- Algoritmos
+- Modelos matemáticos
+
+Fluxo básico:
+
+1. Coleta de dados  
+2. Processamento  
+3. Aprendizado de padrões  
+4. Tomada de decisão ou geração de resposta  
+
+📌 A IA moderna é fortemente baseada em Machine Learning
+
+---
+
+## 🧠 Conceitos importantes
+
+### 🧱 Hierarquia da IA
+
+A relação entre os conceitos é:
+<img width="810" height="797" alt="image" src="https://github.com/user-attachments/assets/b1acda69-687d-4d90-9430-0c560bb60611" />
+
+```text
+Inteligência Artificial (AI)
+└── Machine Learning (ML)
+    └── Deep Learning (DL)
+        └── IA Generativa
