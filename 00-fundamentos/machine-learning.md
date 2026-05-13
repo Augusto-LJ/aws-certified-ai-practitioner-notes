@@ -4,6 +4,8 @@
 
 Machine Learning (ML) é uma área da inteligência artificial que permite que sistemas **aprendam padrões a partir de dados** e façam previsões ou tomem decisões **sem serem explicitamente programados**.
 
+<img width="448" height="447" alt="image" src="https://github.com/user-attachments/assets/fc202791-6eba-41e5-bf99-08d7337810e6" />
+
 ---
 
 ## 🎯 Quando usar
