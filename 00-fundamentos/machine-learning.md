@@ -186,6 +186,128 @@ Não é direto no ML, mas na AWS:
 
 ---
 
+## 🧪 Técnicas e casos de uso de ML
+<img width="931" height="221" alt="image" src="https://github.com/user-attachments/assets/0badbf7d-2d7e-49d0-96a1-fb8658ddcd81" />
+
+### 🟢 Aprendizado supervisionado (Supervised Learning)
+<img width="849" height="420" alt="image" src="https://github.com/user-attachments/assets/f4867291-31fa-4d14-b0d5-12a250f57b76" />
+
+- Usa dados rotulados
+- Aprende:
+  - Entrada → saída
+- Objetivo:
+  - Fazer previsões
+
+📌 Subcategorias:
+- Classificação
+- Regressão
+
+---
+
+#### 🏷️ Classificação (Classification)
+
+- Prevê categorias/classes
+
+- Ex:
+  - Spam vs não spam
+  - Fraude vs legítimo
+  - Diagnóstico médico
+
+📌 Casos de uso:
+- Detecção de fraudes
+- Classificação de imagens
+- Retenção de clientes
+
+---
+
+#### 📈 Regressão (Regression)
+
+- Prevê valores numéricos contínuos
+
+- Ex:
+  - Preço de imóveis
+  - Temperatura
+  - Crescimento populacional
+
+📌 Casos de uso:
+- Previsão do tempo
+- Mercado financeiro
+- Popularidade de anúncios
+
+---
+
+### 🟡 Aprendizado não supervisionado (Unsupervised Learning)
+<img width="444" height="541" alt="image" src="https://github.com/user-attachments/assets/ab023048-9a2a-44b6-919f-4285c4f7ccc4" />
+
+- Usa dados não rotulados
+- Descobre:
+  - Padrões
+  - Estruturas
+  - Relacionamentos
+
+📌 Subcategorias:
+- Clustering
+- Redução de dimensionalidade
+
+---
+
+#### 🧩 Agrupamento em clusters (Clustering)
+
+- Agrupa dados semelhantes
+
+- Ex:
+  - Segmentação de clientes
+  - Marketing direcionado
+  - Sistemas de recomendação
+
+📌 Objetivo:
+- Encontrar grupos naturalmente
+
+---
+
+#### 📉 Redução de dimensionalidade (Dimensionality Reduction)
+
+- Reduz quantidade de atributos/dimensões
+- Mantém informações importantes
+
+📌 Casos de uso:
+- Visualização de dados
+- Compressão
+- Descoberta de padrões
+
+---
+
+### 🔵 Aprendizado por reforço (Reinforcement Learning)
+
+- Aprende por tentativa e erro
+- Recebe:
+  - Recompensas
+  - Penalidades
+
+📌 Componentes:
+- Agente
+- Ambiente
+- Ações
+- Recompensas
+
+---
+
+#### 🏎️ Exemplo: AWS DeepRacer
+<img width="509" height="395" alt="image" src="https://github.com/user-attachments/assets/50a2cba9-4a5b-4fc7-9f36-5a69fe51eb89" />
+
+- Agente:
+  - Carro virtual
+
+- Ambiente:
+  - Pista virtual
+
+- Objetivo:
+  - Completar pista rapidamente sem sair dela
+
+📌 Aprende continuamente com feedback
+
+---
+
 ## 🔁 Comparações importantes
 
 ---
@@ -220,6 +342,26 @@ Não é direto no ML, mas na AWS:
 
 ---
 
+### Classificação vs Regressão
+
+| Classificação | Regressão |
+|--------------|-----------|
+| Prevê categorias | Prevê números |
+| Spam/não spam | Preço de casa |
+| Resultado discreto | Resultado contínuo |
+
+---
+
+### Clustering vs Classificação
+
+| Clustering | Classificação |
+|------------|--------------|
+| Não supervisionado | Supervisionado |
+| Sem rótulos | Com rótulos |
+| Descobre grupos | Prevê categorias |
+
+---
+
 ## 🧠 Conceitos importantes para prova
 
 - ML depende fortemente de **dados de qualidade**
@@ -229,6 +371,12 @@ Não é direto no ML, mas na AWS:
 - Treinamento ≠ inferência
 - Dados estruturados vs não estruturados
 - Batch vs real-time = **latência vs volume**
+- Supervisionado usa dados rotulados
+- Não supervisionado usa dados não rotulados
+- Classificação → categorias
+- Regressão → valores numéricos
+- Clustering → agrupamento
+- Reinforcement learning → tentativa e erro
 
 ---
 
@@ -239,6 +387,10 @@ Não é direto no ML, mas na AWS:
 - Inferência não é treinamento
 - Não supervisionado não significa "sem aprendizado"
 - Tempo real ≠ sempre melhor (depende do caso)
+- Classificação ≠ regressão
+- Clustering não usa rótulos
+- Reinforcement learning não aprende com dataset rotulado tradicional
+- Redução de dimensionalidade não significa perda total de informação
 
 ---
 
