@@ -2,6 +2,8 @@
 
 IA Generativa (Generative AI) é um tipo de inteligência artificial capaz de **criar conteúdo novo** a partir de padrões aprendidos em dados existentes.
 
+<img width="482" height="475" alt="image" src="https://github.com/user-attachments/assets/adb2cd1c-af5b-47cb-a753-61542038b499" />
+
 📌 Diferente do ML tradicional:
 - ML → classifica / prevê
 - Generative AI → **gera conteúdo**
