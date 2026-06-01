@@ -279,6 +279,108 @@ A IA Generativa é baseada em modelos treinados com grandes volumes de dados:
 
 ---
 
+### ✨ Capacidades da IA Generativa (Generative AI Capabilities)
+
+A IA generativa não apenas cria conteúdo novo, mas também pode automatizar tarefas, apoiar decisões e aumentar a produtividade.
+
+---
+
+#### 🔄 Adaptabilidade (Adaptability)
+
+- Consegue se adaptar a diferentes tarefas e domínios
+- Pode gerar conteúdo para diversos contextos
+
+- Ex:
+  - Marketing
+  - Atendimento ao cliente
+  - Desenvolvimento de software
+
+📌 Um mesmo modelo pode ser utilizado para múltiplos casos de uso
+
+---
+
+#### ⚡ Responsividade (Responsiveness)
+
+- Gera respostas em tempo real
+- Permite interações dinâmicas
+
+- Ex:
+  - Chatbots
+  - Assistentes virtuais
+  - Copilots
+
+📌 Fundamental para aplicações conversacionais
+
+---
+
+#### 🎯 Simplicidade (Simplicity)
+
+- Automatiza tarefas complexas
+- Reduz esforço manual
+
+- Ex:
+  - Criação de textos
+  - Resumos
+  - Geração de código
+
+📌 Aumenta produtividade dos usuários
+
+---
+
+#### 🎨 Criatividade e exploração (Creativity & Exploration)
+
+- Cria novas ideias e conteúdos
+- Combina informações de maneiras inovadoras
+
+- Ex:
+  - Design de produtos
+  - Criação de imagens
+  - Brainstorming
+
+📌 Uma das principais características da Generative AI
+
+---
+
+#### 📊 Eficiência de dados (Data Efficiency)
+
+- Alguns modelos conseguem produzir bons resultados usando quantidades relativamente pequenas de dados adicionais
+
+📌 Útil quando dados são limitados ou difíceis de obter
+
+---
+
+#### 👤 Personalização (Personalization)
+
+- Gera conteúdo adaptado ao usuário
+- Considera contexto e preferências
+
+- Ex:
+  - Recomendações
+  - Conteúdo personalizado
+  - Assistentes inteligentes
+
+📌 Melhora experiência e engajamento
+
+---
+
+#### 📈 Escalabilidade (Scalability)
+
+- Produz grande volume de conteúdo rapidamente
+- Mantém consistência em larga escala
+
+- Ex:
+  - Geração de descrições de produtos
+  - Atendimento automatizado
+  - Criação de documentação
+
+📌 Escala muito superior ao trabalho manual
+
+---
+
+## ⚠️ Pegadinhas comuns
+
+
+
 ## 💰 Modelo de cobrança (conceitual)
 
 Na AWS (ex: Bedrock):
@@ -342,6 +444,7 @@ Na AWS (ex: Bedrock):
 ## 🧠 Conceitos importantes para prova
 
 - Generative AI = **gera conteúdo novo**
+  - Pode gerar: Texto, imagens, código, áudio, vídeo
 - Baseada em:
   - Foundation Models
   - LLMs
@@ -349,17 +452,27 @@ Na AWS (ex: Bedrock):
 - Tokens são unidade de custo e processamento
 - RAG vs Fine-tuning é MUITO cobrado
 - Temperatura controla criatividade
+- IA Generativa:
+  - É altamente adaptável
+  - Pode gerar: Texto, imagens, código, áudio, vídeo
+  - Pode responder em tempo real
+  - Permite personalização em escala
+  - Aumenta produtividade e criatividade
 
 ---
 
 ## ⚠️ Pegadinhas comuns
 
 - Generative AI não garante respostas corretas
+- Generative AI não serve apenas para chatbots
 - Mais dados ≠ melhor resposta (depende do prompt)
 - Fine-tuning não é sempre necessário
 - RAG não treina o modelo
 - Tokens ≠ palavras
-
+- Criatividade não significa precisão
+- Respostas rápidas não garantem respostas corretas
+- Personalização depende de contexto e dados fornecidos
+  
 ---
 
 ## 🔁 Resumo rápido
