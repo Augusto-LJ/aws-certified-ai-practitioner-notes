@@ -201,6 +201,77 @@ O modelo pode reproduzir preconceitos presentes nos dados de treinamento.
 
 ---
 
+### ©️ Propriedade Intelectual (Intellectual Property)
+
+#### 📌 Risco
+
+O modelo pode gerar conteúdo semelhante ao material utilizado durante o treinamento.
+
+- Ex:
+  - Texto
+  - Código
+  - Imagens
+  - Obras artísticas
+
+Isso pode gerar preocupações relacionadas a:
+
+- Direitos autorais
+- Licenciamento
+- Uso indevido de conteúdo
+
+---
+
+#### 🛡️ Mitigação
+
+- Revisão humana
+- Governança de conteúdo
+- Políticas de uso responsável
+
+---
+
+### 📝 Plágio e Fraude (Plagiarism & Fraud)
+
+#### 📌 Risco
+
+A IA pode ser utilizada para produzir conteúdo apresentado indevidamente como criação humana.
+
+- Ex:
+  - Trabalhos acadêmicos
+  - Currículos
+  - Avaliações
+  - Documentação
+
+---
+
+#### 🛡️ Mitigação
+
+- Políticas organizacionais
+- Revisão humana
+- Ferramentas de detecção
+
+---
+
+### 💼 Disrupção da Natureza do Trabalho (Workforce Disruption)
+
+#### 📌 Risco
+
+A automação pode alterar significativamente determinadas funções profissionais.
+
+- Ex:
+  - Produção de conteúdo
+  - Atendimento ao cliente
+  - Desenvolvimento de software
+
+---
+
+#### 🛡️ Mitigação
+
+- Capacitação profissional
+- Uso colaborativo entre humanos e IA
+- Requalificação de equipes
+
+---
+
 ## 🔁 Comparações importantes
 
 ### Alucinação vs Não determinismo
