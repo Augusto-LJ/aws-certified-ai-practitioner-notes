@@ -642,6 +642,382 @@ Exemplos:
 
 ---
 
+## 🛠️ Serviços e ferramentas da AWS para IA responsável
+
+A AWS oferece diversos serviços e ferramentas para ajudar organizações a implementar práticas de IA responsável durante todo o ciclo de vida dos modelos.
+
+Essas ferramentas ajudam em áreas como:
+
+- Avaliação de modelos
+- Proteções para IA generativa
+- Detecção de viés
+- Explicabilidade
+- Monitoramento
+- Revisão humana
+- Governança
+- Transparência
+
+---
+
+### 🧠 Amazon SageMaker
+<img width="189" height="190" alt="image" src="https://github.com/user-attachments/assets/aaeb1987-18f0-455d-a2aa-66409a0061fe" />
+
+O Amazon SageMaker é um serviço totalmente gerenciado para criação, treinamento e implantação de modelos de Machine Learning (ML).
+
+Permite:
+
+- Criar modelos de ML
+- Treinar modelos em escala
+- Implantar modelos em produção
+- Monitorar modelos
+- Aplicar práticas de IA responsável
+
+---
+
+#### Benefícios
+
+- Ambiente totalmente gerenciado
+- Escalabilidade automática
+- Integração com ferramentas de governança
+- Recursos de monitoramento e explicabilidade
+
+---
+
+### 🤖 Amazon Bedrock
+<img width="191" height="189" alt="image" src="https://github.com/user-attachments/assets/6d73998a-e1a6-4aea-8566-04077663c596" />
+
+O Amazon Bedrock é um serviço totalmente gerenciado para trabalhar com Foundation Models (FMs).
+
+Permite:
+
+- Utilizar modelos de diversos fornecedores
+- Personalizar modelos
+- Criar aplicações de IA generativa
+- Implementar controles de IA responsável
+
+---
+
+#### Benefícios
+
+- Sem gerenciamento de infraestrutura
+- API unificada
+- Segurança integrada
+- Recursos de governança e proteção
+
+---
+
+## 🔍 Avaliação de modelos (Model Evaluation)
+
+Antes de utilizar um modelo em produção, é importante avaliar se ele é adequado para o caso de uso.
+
+A AWS oferece ferramentas para avaliação de Foundation Models.
+
+---
+
+### 📊 Avaliação de modelos no Amazon Bedrock
+
+Permite:
+
+- Comparar modelos
+- Avaliar modelos
+- Selecionar o melhor FM
+
+---
+
+#### Avaliação automática
+
+Métricas avaliadas:
+
+- Precisão (Accuracy)
+- Robustez (Robustness)
+- Toxicidade (Toxicity)
+
+---
+
+#### Avaliação humana
+
+Métricas subjetivas:
+
+- Simpatia (Friendliness)
+- Estilo
+- Voz da marca
+- Qualidade percebida
+
+Pode utilizar:
+
+- Equipe interna
+- Equipe gerenciada pela AWS
+
+---
+
+### 📈 Amazon SageMaker Clarify
+
+Ferramenta usada para avaliação de modelos e IA responsável.
+
+Permite avaliar:
+
+- Precisão
+- Robustez
+- Toxicidade
+
+Também suporta:
+
+- Avaliações humanas
+- Avaliações automáticas
+
+---
+
+## 🛡️ Proteções para IA generativa
+
+### 🚧 Guardrails for Amazon Bedrock
+
+Ferramenta utilizada para criar proteções em aplicações de IA generativa.
+
+Objetivos:
+
+- Filtrar conteúdo inadequado
+- Bloquear tópicos proibidos
+- Proteger dados sensíveis
+- Aplicar políticas corporativas
+
+---
+
+#### Funcionalidades
+
+##### 🚫 Bloqueio de tópicos indesejados
+
+Permite restringir assuntos específicos.
+
+Ex:
+
+- Consultoria financeira
+- Conselhos médicos
+- Temas proibidos pela empresa
+
+---
+
+##### ⚠️ Filtro de conteúdo nocivo
+
+Filtra conteúdo relacionado a:
+
+- Ódio (Hate)
+- Insultos
+- Conteúdo sexual
+- Violência
+
+---
+
+##### 🔒 Proteção de PII
+
+PII (Personally Identifiable Information)
+
+Permite:
+
+- Detectar PII
+- Bloquear PII
+- Mascarar PII
+
+Ex:
+
+- CPF
+- Telefone
+- Endereço
+- E-mail
+
+---
+
+## ⚖️ Detecção de viés (Bias Detection)
+
+### 🔎 SageMaker Clarify
+
+Ajuda a identificar possíveis vieses em:
+
+- Dados
+- Modelos
+
+Sem necessidade de programação extensa.
+
+---
+
+#### Exemplos de atributos analisados
+
+- Gênero
+- Idade
+- Raça
+- Região
+
+---
+
+#### Resultado
+
+O Clarify gera:
+
+- Relatórios visuais
+- Métricas de viés
+- Recomendações de análise
+
+---
+
+### ⚖️ SageMaker Data Wrangler
+
+Ferramenta usada para preparação de dados.
+
+Ajuda a balancear conjuntos de dados desbalanceados.
+
+Técnicas disponíveis:
+
+- Subamostragem aleatória
+- Sobreamostragem aleatória
+- SMOTE (Synthetic Minority Oversampling Technique)
+
+---
+
+## 🔍 Explicabilidade de modelos (Explainability)
+
+### 📈 SageMaker Clarify
+
+Permite entender por que um modelo tomou determinada decisão.
+
+Fornece:
+
+- Importância dos atributos
+- Contribuição de cada variável
+- Explicações de previsões
+
+---
+
+#### Exemplos
+
+O modelo aprovou um empréstimo devido a:
+
+- Renda
+- Histórico de crédito
+- Baixo endividamento
+
+Em vez de apenas retornar:
+
+> Empréstimo aprovado
+
+---
+
+### 🧪 SageMaker Experiments
+
+Ferramenta usada para:
+
+- Comparar experimentos
+- Gerenciar versões
+- Analisar resultados de treinamento
+
+Trabalha integrada ao SageMaker Clarify.
+
+---
+
+## 📡 Monitoramento e revisão humana
+
+### 📊 SageMaker Model Monitor
+
+Monitora modelos em produção.
+
+Detecta:
+
+- Queda de desempenho
+- Mudança nos dados (Data Drift)
+- Mudança de comportamento do modelo
+
+---
+
+#### Benefícios
+
+- Alertas automáticos
+- Monitoramento contínuo
+- Correções preventivas
+
+---
+
+### 👤 Amazon A2I (Amazon Augmented AI)
+
+Serviço para revisão humana de previsões feitas por modelos.
+
+Permite:
+
+- Aprovação humana
+- Revisão de resultados críticos
+- Fluxos Human-in-the-Loop
+
+---
+
+#### Conceito importante
+
+📌 A2I = Human Review
+
+---
+
+## 🏛️ Governança
+
+A AWS fornece ferramentas específicas para governança de IA.
+
+---
+
+### 🔑 SageMaker Role Manager
+
+Permite:
+
+- Gerenciar permissões
+- Aplicar princípio do menor privilégio
+- Controlar acesso aos recursos
+
+---
+
+### 📝 SageMaker Model Cards
+
+Documentação dos modelos.
+
+Armazena informações como:
+
+- Objetivo do modelo
+- Riscos
+- Dados utilizados
+- Processo de treinamento
+- Casos de uso
+
+---
+
+### 📊 SageMaker Model Dashboard
+
+Painel centralizado para:
+
+- Monitorar modelos
+- Acompanhar métricas
+- Visualizar riscos
+- Gerenciar governança
+
+---
+
+## 🪟 Transparência
+
+### 📚 AWS AI Service Cards
+
+Documentação oficial dos serviços de IA da AWS.
+
+Objetivo:
+
+- Melhorar transparência
+- Explicar limitações
+- Explicar casos de uso
+- Apoiar IA responsável
+
+---
+
+#### Cada AI Service Card inclui
+
+- Conceitos básicos
+- Casos de uso recomendados
+- Limitações
+- Considerações de IA responsável
+- Boas práticas de implantação
+
+---
+
 ## 🔁 Comparações importantes
 
 ### IA Responsável vs Segurança
@@ -709,7 +1085,18 @@ Exemplos:
 - Cross Validation ajuda a detectar overfitting
 - Regularization reduz overfitting
 - Mais dados podem melhorar a generalização
-- Todas as dimensões da IA responsável devem estar presentes durante todo o ciclo de vida da IA.
+- Todas as dimensões da IA responsável devem estar presentes durante todo o ciclo de vida da IA
+- Guardrails for Amazon Bedrock = principal serviço de proteção e segurança para aplicações de IA generativa
+- SageMaker = plataforma de ML
+- Bedrock = plataforma de IA generativa
+- Guardrails = proteção para IA generativa
+- SageMaker Clarify = viés + explicabilidade + avaliação
+- Data Wrangler = balanceamento de dados
+- Model Monitor = monitoramento de modelos
+- A2I = revisão humana
+- Model Cards = documentação do modelo
+- Model Dashboard = governança
+- AI Service Cards = transparência
 
 ---
 
@@ -726,7 +1113,13 @@ Exemplos:
 - Governança não significa apenas conformidade legal
 - Robustez não significa precisão perfeita
 - Um sistema pode ser preciso e ainda assim não ser imparcial
-- 
+- Guardrails não treinam modelos
+- Clarify não corrige viés automaticamente
+- A2I não monitora modelos
+- Model Monitor não faz revisão humana
+- Bedrock não substitui o SageMaker
+- AI Service Cards não são Model Cards
+
 ---
 
 ## 🔁 Resumo rápido
@@ -744,6 +1137,15 @@ Exemplos:
 - Fundamental para reduzir riscos e aumentar confiança
 - IA responsável é composta por várias dimensões complementares
 - IA responsável reduz riscos e aumenta valor para o negócio
+- Bedrock → Foundation Models e IA generativa
+- Guardrails → proteção e segurança
+- Clarify → viés, explicabilidade e avaliação
+- Data Wrangler → balanceamento de dados
+- Model Monitor → monitoramento
+- A2I → revisão humana
+- Model Cards → documentação
+- Model Dashboard → governança
+- AI Service Cards → transparência
 
 ---
 
