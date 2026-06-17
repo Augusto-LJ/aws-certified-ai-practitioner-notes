@@ -44,6 +44,9 @@ Embora não consiga visualizar diretamente a lógica interna do modelo, ela usa 
 
 Existe uma relação comum entre interpretabilidade e desempenho.
 
+<img width="918" height="516" alt="image" src="https://github.com/user-attachments/assets/12d0807f-b090-4606-8570-00bad991bc36" />
+
+
 ### Modelos mais interpretáveis
 
 Exemplos:
