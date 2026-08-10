@@ -58,20 +58,20 @@ Exemplo:
 
 A frase:
 
-> Um cachorrinho é para o cachorro como um gatinho é para o gato.
+> Um cachorrinho está para o cachorro como um gatinho está para o gato.
 
 Pode ser dividida aproximadamente em:
 
 - "Um"
 - "cachorrinho"
-- "é"
+- "está"
 - "para"
 - "o"
 - "cachorro"
 - "como"
 - "um"
 - "gatinho"
-- "é"
+- "está"
 - "para"
 - "o"
 - "gato"
@@ -295,7 +295,7 @@ Cada modelo possui características próprias, como:
 # 🧠 Conceitos importantes para prova
 
 - LLM significa **Large Language Model**.
-- Todo LLM é um Foundation Model.
+- Todo LLM é um Foundation Model (mas o contrário não é verdade).
 - Os modelos processam **tokens**, não palavras.
 - Embeddings representam o significado dos dados em forma de vetores.
 - Tokens influenciam:
