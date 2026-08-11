@@ -184,14 +184,31 @@ Indicada para:
 
 ---
 
+## 🔢 Top-k
+
+O modelo olha para todas as palavras possíveis e seleciona apenas as K palavras mais prováveis.
+
+Na prática:
+
+- Valores menores evitam palavras sem sentido, mas deixam o texto repetitivo.
+- Valores maiores permitem maior variedade de vocabulário.
+
+**Exemplo (Top-k = 40)**: O modelo escolhe a próxima palavra apenas entre as 40 opções mais cotadas.
+
+📌 Para a AI Practitioner, basta conhecer o conceito geral. Não é necessário decorar valores.
+
+---
+
 ## 🔢 Top-p
 
-Limita a escolha dos próximos tokens às opções com maior probabilidade.
+O modelo junta as palavras mais prováveis até que a soma das chances delas atinja o valor de P.
 
 Na prática:
 
 - Valores menores tornam a resposta mais conservadora.
 - Valores maiores permitem maior diversidade.
+
+**Exemplo (Top-p = 0.9):** O modelo considera apenas o grupo de palavras cujas chances somadas chegam a 90% do total.
 
 📌 Para a AI Practitioner, basta conhecer o conceito geral. Não é necessário decorar valores.
 
