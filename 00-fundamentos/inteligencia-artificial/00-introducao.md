@@ -70,7 +70,7 @@ A IA está sendo utilizada em diversos setores para:
 
 ---
 
-### Exemplos:🎬 Mídia e entretenimento (Media & Entertainment)
+### Exemplos:
 - Mídia e entretenimento
 - Varejo
 - Saúde
