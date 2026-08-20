@@ -1,8 +1,9 @@
-# 💻 Amazon Q Developer
+# 💻 Amazon Q Developer (Kiro)
 
 ## 📌 O que é
 
 O Amazon Q Developer é um assistente de IA generativa da AWS focado em **desenvolvedores**, ajudando a escrever, revisar, explicar e otimizar código.
+Foi renomeado para "Kiro", então é importante lembrar de ambos os nomes.
 
 📌 Atua como um **copiloto de desenvolvimento** integrado a ferramentas e ambientes de dev
 
