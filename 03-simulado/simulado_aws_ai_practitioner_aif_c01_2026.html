@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulado AWS Certified AI Practitioner — AIF-C01 — 50 questões</title>
+<style>
+:root {
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --text: #18212f;
+  --muted: #5c6878;
+  --line: #dbe2ea;
+  --accent: #6f42c1;
+  --accent2: #2c7be5;
+  --answer-bg: #f0fbf4;
+  --answer-line: #a8d8b5;
+  --shadow: 0 8px 24px rgba(20, 30, 50, .07);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; }
+header { background: linear-gradient(135deg, #32205f, #5e3aa8); color: white; padding: 34px 20px 28px; }
+.header-inner { max-width: 1050px; margin: 0 auto; }
+h1 { margin: 0 0 8px; font-size: clamp(1.7rem, 4vw, 2.4rem); }
+.subtitle { margin: 0; opacity: .92; max-width: 850px; }
+.container { max-width: 1050px; margin: 24px auto 60px; padding: 0 16px; }
+.toolbar { position: sticky; top: 0; z-index: 10; background: rgba(244,247,251,.95); backdrop-filter: blur(8px); padding: 12px 0; border-bottom: 1px solid var(--line); display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+button { border: 1px solid #cfd7e2; background: white; color: var(--text); border-radius: 9px; padding: 9px 12px; cursor: pointer; font-weight: 650; }
+button:hover { border-color: var(--accent); }
+.status { margin-left:auto; color: var(--muted); font-size:.93rem; }
+.note { background:#fffaf0; border:1px solid #ead8a4; border-radius:12px; padding:14px 16px; margin:18px 0; }
+.grid { display:grid; gap:16px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:15px; box-shadow:var(--shadow); padding:20px; }
+.meta { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:10px; }
+.meta span { background:#eef2f7; color:#506070; border-radius:999px; padding:4px 8px; font-size:.78rem; font-weight:700; }
+.card h2 { font-size:1.08rem; margin:0 0 14px; }
+ol.options { margin:0 0 16px 20px; padding-left:20px; }
+ol.options li { margin:8px 0; padding-left:4px; }
+.answer { border:1px dashed var(--answer-line); border-radius:11px; overflow:hidden; }
+.answer summary { cursor:pointer; padding:10px 12px; font-weight:800; background:#f8fffa; }
+.answer-body { background:var(--answer-bg); padding:12px 14px; border-top:1px solid var(--answer-line); }
+.answer-body p { margin:5px 0; }
+footer { color:var(--muted); font-size:.9rem; margin-top:24px; }
+a { color:var(--accent2); }
+.hidden { display:none !important; }
+@media (max-width:700px) { .status { width:100%; margin-left:0; } .card { padding:16px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>🧠 AWS Certified AI Practitioner — AIF-C01</h1>
+    <p class="subtitle">Simulado com 50 questões autorais, atualizado para o guia de exame 2026. As respostas ficam ocultas até você clicar em “Revelar resposta”.</p>
+  </div>
+</header>
+<div class="container">
+  <div class="note">
+    <strong>Como usar:</strong> tente responder cada questão antes de abrir a solução. O conjunto segue aproximadamente a distribuição dos domínios do exame: 10 / 12 / 14 / 7 / 7 questões. Há questões de múltipla escolha, múltipla resposta, ordenação e correspondência.
+    <br><br>
+    <strong>Importante:</strong> as questões são originais e foram construídas a partir do escopo oficial e de materiais públicos de preparação; não são cópias de questões reais da AWS nem de dumps.
+  </div>
+  <div class="toolbar">
+    <button onclick="toggleAll(true)">Revelar todas</button>
+    <button onclick="toggleAll(false)">Ocultar todas</button>
+    <span class="status" id="status">0/50 respostas reveladas</span>
+  </div>
+  <main class="grid">
+    
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 1</span><span>Múltipla escolha</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>1. Uma empresa quer um sistema que aprenda padrões históricos para prever a demanda mensal de um produto. Qual abordagem é mais apropriada?</h2>
+  <ol class="options" type="A"><li>Machine Learning</li>
+<li>Amazon Textract</li>
+<li>Amazon Polly</li>
+<li>Amazon Bedrock Guardrails</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Machine Learning</p>
+      <p><strong>Explicação:</strong> O objetivo é aprender padrões a partir de dados históricos para fazer previsões. Isso é um caso típico de Machine Learning.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 2</span><span>Múltipla escolha</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>2. Um modelo recebe exemplos rotulados como &quot;fraude&quot; ou &quot;não fraude&quot; e aprende a atribuir uma dessas classes a novas transações. Qual tipo de aprendizado está sendo usado?</h2>
+  <ol class="options" type="A"><li>Aprendizado não supervisionado</li>
+<li>Aprendizado por reforço</li>
+<li>Aprendizado supervisionado</li>
+<li>Clustering</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> C) Aprendizado supervisionado</p>
+      <p><strong>Explicação:</strong> Os exemplos de treinamento possuem rótulos conhecidos. Classificar novas transações em categorias é um caso de classificação supervisionada.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 3</span><span>Múltipla escolha</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>3. Uma imobiliária quer prever o preço de venda de um imóvel usando área, localização e número de quartos. Qual tipo de tarefa de ML descreve melhor esse problema?</h2>
+  <ol class="options" type="A"><li>Classificação</li>
+<li>Regressão</li>
+<li>Clustering</li>
+<li>Aprendizado por reforço</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Regressão</p>
+      <p><strong>Explicação:</strong> O resultado desejado é um valor numérico contínuo, como o preço. Isso caracteriza regressão.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 4</span><span>Múltipla escolha</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>4. Uma aplicação envia solicitações de inferência para processamento, mas o usuário não precisa receber o resultado imediatamente. Qual tipo de inferência é mais adequado?</h2>
+  <ol class="options" type="A"><li>Real-time inference</li>
+<li>Batch inference somente</li>
+<li>Asynchronous inference</li>
+<li>Serverless inference somente</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> C) Asynchronous inference</p>
+      <p><strong>Explicação:</strong> Inferência assíncrona permite enviar a solicitação e obter o resultado posteriormente, sem manter o usuário bloqueado aguardando a resposta.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 5</span><span>Múltipla escolha</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>5. Qual cenário caracteriza melhor uma aplicação de Agentic AI?</h2>
+  <ol class="options" type="A"><li>Um modelo apenas classifica e-mails como spam ou não spam</li>
+<li>Um modelo gera um resumo de um documento e encerra a execução</li>
+<li>Um sistema interpreta um objetivo, consulta ferramentas externas, executa etapas e ajusta o plano conforme os resultados</li>
+<li>Um algoritmo agrupa clientes por similaridade sem receber rótulos</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> C) Um sistema interpreta um objetivo, consulta ferramentas externas, executa etapas e ajusta o plano conforme os resultados</p>
+      <p><strong>Explicação:</strong> Agentic AI envolve planejamento, uso de ferramentas, execução de ações e orquestração de múltiplas etapas.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 6</span><span>Múltipla escolha</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>6. Uma empresa precisa de um modelo muito específico para classificar solicitações reguladas e exige alta explicabilidade sobre cada decisão. Qual afirmação é mais adequada?</h2>
+  <ol class="options" type="A"><li>Um Foundation Model generativo é sempre a escolha correta, independentemente dos requisitos</li>
+<li>Um modelo tradicional de ML pode ser mais apropriado quando explicabilidade e restrições regulatórias são prioritárias</li>
+<li>Um chatbot é necessariamente mais explicável que um modelo de classificação</li>
+<li>RAG elimina qualquer necessidade de explicabilidade</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Um modelo tradicional de ML pode ser mais apropriado quando explicabilidade e restrições regulatórias são prioritárias</p>
+      <p><strong>Explicação:</strong> O guia atual do exame explicita a escolha entre ML tradicional e Foundation Models com base em fatores como regulação, explicabilidade e restrições operacionais.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 7</span><span>Múltipla resposta</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>7. Quais são exemplos de dados não estruturados?</h2>
+  <ol class="options" type="A"><li>Texto livre de documentos</li>
+<li>Imagens</li>
+<li>Valores de uma tabela relacional com esquema fixo</li>
+<li>Áudio de chamadas</li>
+<li>Vídeos</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A, B, D e E</p>
+      <p><strong>Explicação:</strong> Texto livre, imagens, áudio e vídeo são exemplos típicos de dados não estruturados. Uma tabela relacional com esquema definido é estruturada.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 8</span><span>Múltipla escolha</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>8. Em um classificador de fraude, a empresa quer saber quantas das transações previstas como fraude realmente eram fraude. Qual métrica responde diretamente a essa pergunta?</h2>
+  <ol class="options" type="A"><li>Recall</li>
+<li>Precisão (Precision)</li>
+<li>Acurácia</li>
+<li>Latência</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Precisão (Precision)</p>
+      <p><strong>Explicação:</strong> Precision mede, entre as previsões positivas, a proporção que realmente é positiva.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 9</span><span>Ordenação</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>9. Coloque em uma ordem plausível as etapas simplificadas de um ciclo de ML, do início até a operação contínua.</h2>
+  <ol class="options" type="A"><li>Implantação</li>
+<li>Coleta/preparação de dados</li>
+<li>Monitoramento e possível retreinamento</li>
+<li>Treinamento e avaliação</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B → D → A → C</p>
+      <p><strong>Explicação:</strong> Uma sequência simplificada é: coletar/preparar dados → treinar e avaliar → implantar → monitorar e retreinar quando necessário.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Fundamentos de IA e ML">
+  <div class="meta"><span>Questão 10</span><span>Múltipla escolha</span><span>Domínio 1 — Fundamentos de IA e ML</span></div>
+  <h2>10. Uma empresa quer converter automaticamente gravações de chamadas em texto para posterior análise. Qual serviço é o melhor encaixe?</h2>
+  <ol class="options" type="A"><li>Amazon Polly</li>
+<li>Amazon Transcribe</li>
+<li>Amazon Rekognition</li>
+<li>Amazon Translate</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Amazon Transcribe</p>
+      <p><strong>Explicação:</strong> Amazon Transcribe converte fala/áudio em texto. Polly faz o caminho inverso: texto para fala.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 11</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>11. Uma aplicação GenAI passa a enviar prompts com o dobro de tokens, mantendo todo o resto constante e usando um modelo cobrado por tokens. Qual consequência é mais diretamente esperada?</h2>
+  <ol class="options" type="A"><li>O custo de inferência tende a aumentar</li>
+<li>O custo necessariamente cai</li>
+<li>O modelo passa automaticamente a ser fine-tuned</li>
+<li>O contexto do modelo deixa de ser relevante</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) O custo de inferência tende a aumentar</p>
+      <p><strong>Explicação:</strong> No modelo de precificação baseado em tokens, maior volume de tokens processados pode aumentar o custo. Contexto maior também pode afetar latência e desempenho.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 12</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>12. Qual situação descreve melhor context engineering?</h2>
+  <ol class="options" type="A"><li>Escolher o nome do banco de dados</li>
+<li>Organizar, selecionar e controlar as informações fornecidas ao Foundation Model para melhorar a resposta</li>
+<li>Aumentar a memória RAM do servidor</li>
+<li>Treinar uma rede neural do zero</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Organizar, selecionar e controlar as informações fornecidas ao Foundation Model para melhorar a resposta</p>
+      <p><strong>Explicação:</strong> Context engineering trata de como o contexto relevante é construído e entregue ao modelo, indo além de apenas escrever a instrução do prompt.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 13</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>13. Qual arquitetura é fortemente associada aos LLMs modernos por utilizar mecanismos de attention para processar relações entre tokens?</h2>
+  <ol class="options" type="A"><li>Transformer</li>
+<li>Decision tree</li>
+<li>K-means</li>
+<li>Logistic regression</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Transformer</p>
+      <p><strong>Explicação:</strong> Transformers usam mecanismos de attention e são a arquitetura dominante em muitos LLMs modernos.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 14</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>14. Uma equipe quer fazer busca semântica sobre documentos convertendo trechos de texto em representações numéricas comparáveis por similaridade. Qual conceito é central nesse processo?</h2>
+  <ol class="options" type="A"><li>Embeddings</li>
+<li>Load balancing</li>
+<li>IAM roles</li>
+<li>Data sharding</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Embeddings</p>
+      <p><strong>Explicação:</strong> Embeddings representam conteúdo em vetores numéricos que podem ser comparados por similaridade semântica.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 15</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>15. Qual afirmação descreve melhor um modelo de diffusion?</h2>
+  <ol class="options" type="A"><li>Um modelo que gera dados apenas por classificação supervisionada</li>
+<li>Um modelo generativo associado a um processo de adição e remoção de ruído</li>
+<li>Um banco de dados vetorial</li>
+<li>Um mecanismo exclusivo de autorização da AWS</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Um modelo generativo associado a um processo de adição e remoção de ruído</p>
+      <p><strong>Explicação:</strong> Modelos de diffusion são modelos generativos que aprendem a reverter um processo de ruído para gerar amostras.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 16</span><span>Múltipla resposta</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>16. Quais são limitações típicas que devem ser consideradas ao usar GenAI?</h2>
+  <ol class="options" type="A"><li>Alucinações</li>
+<li>Não determinismo</li>
+<li>Possibilidade de respostas inexatas</li>
+<li>Interpretabilidade limitada em alguns modelos</li>
+<li>Garantia de factualidade em todas as respostas</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A, B, C e D</p>
+      <p><strong>Explicação:</strong> O guia atual lista hallucinations, inaccuracy, nondeterminism e desafios de interpretabilidade entre as limitações de GenAI. Não há garantia universal de factualidade.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 17</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>17. Uma equipe quer explorar rapidamente modelos pré-treinados, comparar opções e, quando aplicável, personalizá-las e implantá-las usando o ecossistema SageMaker. Qual recurso é o melhor encaixe?</h2>
+  <ol class="options" type="A"><li>SageMaker JumpStart</li>
+<li>Amazon Macie</li>
+<li>Amazon Polly</li>
+<li>AWS CloudTrail</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) SageMaker JumpStart</p>
+      <p><strong>Explicação:</strong> SageMaker JumpStart fornece acesso a modelos pré-treinados e Foundation Models, além de opções para avaliar, personalizar e implantar modelos no ecossistema SageMaker.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 18</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>18. Qual serviço AWS foi adicionado ao escopo revisado de 2026 e é voltado à infraestrutura e execução de aplicações com agentes de IA?</h2>
+  <ol class="options" type="A"><li>Amazon Bedrock AgentCore</li>
+<li>Amazon MemoryDB</li>
+<li>AWS DeepComposer</li>
+<li>Amazon WorkDocs</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Amazon Bedrock AgentCore</p>
+      <p><strong>Explicação:</strong> O guia de revisão 1.1 adicionou Amazon Bedrock AgentCore ao conjunto de serviços em escopo e removeu Amazon MemoryDB dessa lista.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 19</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>19. Em um sistema de agentes, qual é o papel principal do Model Context Protocol (MCP)?</h2>
+  <ol class="options" type="A"><li>Treinar modelos de visão computacional</li>
+<li>Conectar agentes a ferramentas e sistemas externos por meio de um protocolo padronizado</li>
+<li>Substituir o IAM em toda a AWS</li>
+<li>Converter áudio em texto</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Conectar agentes a ferramentas e sistemas externos por meio de um protocolo padronizado</p>
+      <p><strong>Explicação:</strong> O guia revisado inclui MCP como conceito de Agentic AI e destaca seu papel na conexão de agentes a sistemas externos.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 20</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>20. Qual opção descreve melhor o Amazon Strands Agents?</h2>
+  <ol class="options" type="A"><li>Um SDK de código aberto para criar agentes de IA autônomos</li>
+<li>Um serviço de armazenamento de objetos</li>
+<li>Um serviço de tradução automática</li>
+<li>Um mecanismo de auditoria de APIs da AWS</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Um SDK de código aberto para criar agentes de IA autônomos</p>
+      <p><strong>Explicação:</strong> O Strands Agents é um SDK de código aberto lançado inicialmente pela AWS, voltado à criação de agentes de IA autônomos e extensíveis.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 21</span><span>Múltipla resposta</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>21. Quais são casos de uso plausíveis para GenAI?</h2>
+  <ol class="options" type="A"><li>Geração de código</li>
+<li>Resumo de documentos</li>
+<li>Geração de imagens</li>
+<li>Assistentes conversacionais</li>
+<li>Somente cálculos aritméticos determinísticos</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A, B, C e D</p>
+      <p><strong>Explicação:</strong> O guia inclui geração de conteúdo, sumarização, assistentes, tradução, geração de código e outros usos entre os casos de uso de GenAI.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Fundamentos de IA generativa">
+  <div class="meta"><span>Questão 22</span><span>Múltipla escolha</span><span>Domínio 2 — Fundamentos de IA generativa</span></div>
+  <h2>22. Uma empresa precisa de capacidade previsível para uma aplicação GenAI crítica e aceita reservar capacidade antecipadamente para obter maior previsibilidade de disponibilidade/desempenho. Qual conceito de custo/capacidade é mais relacionado?</h2>
+  <ol class="options" type="A"><li>Provisioned Throughput</li>
+<li>Clustering</li>
+<li>Prompt injection</li>
+<li>Data labeling</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Provisioned Throughput</p>
+      <p><strong>Explicação:</strong> Provisioned Throughput é associado à reserva/provisionamento de capacidade para obter características mais previsíveis de uso, com trade-offs de custo.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 23</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>23. Qual prompt tende a ser mais específico e eficaz para uma tarefa de classificação?</h2>
+  <ol class="options" type="A"><li>&quot;Analise isso.&quot;</li>
+<li>&quot;Você é uma IA. Faça o que achar melhor.&quot;</li>
+<li>&quot;Classifique o texto como FRAUDE ou LEGÍTIMO. Responda apenas com uma dessas duas categorias e use os critérios abaixo...&quot;</li>
+<li>Um prompt vazio</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> C) &quot;Classifique o texto como FRAUDE ou LEGÍTIMO. Responda apenas com uma dessas duas categorias e use os critérios abaixo...&quot;</p>
+      <p><strong>Explicação:</strong> Especificidade, instruções claras, formato esperado e contexto relevante tendem a melhorar a qualidade e a consistência da saída.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 24</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>24. Um modelo recebe alguns exemplos de entrada e saída no próprio prompt antes de executar a tarefa para um novo caso. Qual técnica é essa?</h2>
+  <ol class="options" type="A"><li>Zero-shot</li>
+<li>Few-shot learning</li>
+<li>Fine-tuning</li>
+<li>Pre-training</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Few-shot learning</p>
+      <p><strong>Explicação:</strong> Few-shot usa exemplos dentro do prompt para orientar o comportamento do modelo sem alterar seus pesos.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 25</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>25. Uma equipe quer orientar um gerador de imagens sobre elementos que não devem aparecer na imagem. Qual conceito de prompt engineering se encaixa melhor?</h2>
+  <ol class="options" type="A"><li>Negative prompt</li>
+<li>Data drift</li>
+<li>Model distillation</li>
+<li>Precision</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Negative prompt</p>
+      <p><strong>Explicação:</strong> Negative prompts especificam características ou elementos que devem ser evitados na geração.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 26</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>26. Qual situação é um exemplo de prompt injection?</h2>
+  <ol class="options" type="A"><li>O usuário adiciona instruções para tentar fazer o sistema ignorar suas regras e revelar informações que deveriam permanecer protegidas</li>
+<li>O modelo recebe um vetor de embedding</li>
+<li>O banco de dados é criptografado</li>
+<li>O modelo é avaliado com um benchmark</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) O usuário adiciona instruções para tentar fazer o sistema ignorar suas regras e revelar informações que deveriam permanecer protegidas</p>
+      <p><strong>Explicação:</strong> Prompt injection tenta manipular as instruções ou o contexto do sistema para obter comportamento não pretendido.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 27</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>27. Uma empresa quer que um chatbot responda usando documentos internos atualizados, sem precisar treinar novamente o modelo toda vez que um documento muda. Qual abordagem é mais adequada?</h2>
+  <ol class="options" type="A"><li>RAG</li>
+<li>Treinamento do zero a cada pergunta</li>
+<li>Aumento de temperatura</li>
+<li>Clustering</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) RAG</p>
+      <p><strong>Explicação:</strong> RAG recupera informações relevantes de uma fonte externa no momento da consulta e as usa para fundamentar a geração.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 28</span><span>Múltipla resposta</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>28. Quais serviços são citados pelo guia atual como opções para armazenar embeddings em bancos de dados vetoriais?</h2>
+  <ol class="options" type="A"><li>Amazon OpenSearch Service</li>
+<li>Amazon Aurora</li>
+<li>Amazon Neptune</li>
+<li>Amazon RDS for PostgreSQL</li>
+<li>Amazon Polly</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A, B, C e D</p>
+      <p><strong>Explicação:</strong> O guia atual cita OpenSearch, Aurora, Neptune e RDS for PostgreSQL como exemplos de serviços que ajudam a armazenar embeddings em bancos vetoriais.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 29</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>29. Uma empresa quer adaptar um Foundation Model para um domínio específico usando um conjunto de exemplos de treinamento e alterar seu comportamento de forma persistente. Qual abordagem descreve melhor o caso?</h2>
+  <ol class="options" type="A"><li>Fine-tuning</li>
+<li>Zero-shot prompting</li>
+<li>RAG exclusivamente</li>
+<li>Aumento da latência</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Fine-tuning</p>
+      <p><strong>Explicação:</strong> Fine-tuning adapta o modelo com dados adicionais para um domínio ou comportamento específico, alterando seus parâmetros.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 30</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>30. Qual diferença descreve melhor RAG versus fine-tuning?</h2>
+  <ol class="options" type="A"><li>RAG adiciona informação relevante ao contexto da consulta; fine-tuning adapta o modelo usando dados de treinamento</li>
+<li>RAG sempre altera os pesos do modelo; fine-tuning nunca altera pesos</li>
+<li>Ambos são exatamente a mesma técnica</li>
+<li>Fine-tuning é apenas uma forma de armazenamento vetorial</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) RAG adiciona informação relevante ao contexto da consulta; fine-tuning adapta o modelo usando dados de treinamento</p>
+      <p><strong>Explicação:</strong> RAG e fine-tuning podem personalizar aplicações, mas de maneiras diferentes: recuperação de contexto externo versus adaptação do próprio modelo.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 31</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>31. Qual objetivo descreve melhor model distillation?</h2>
+  <ol class="options" type="A"><li>Transferir comportamento/conhecimento de um modelo maior para um modelo menor, buscando reduzir custo/latência</li>
+<li>Transformar áudio em texto</li>
+<li>Detectar viés demográfico</li>
+<li>Armazenar embeddings</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Transferir comportamento/conhecimento de um modelo maior para um modelo menor, buscando reduzir custo/latência</p>
+      <p><strong>Explicação:</strong> Distillation busca criar um modelo menor que preserve parte importante do comportamento de um modelo maior, potencialmente reduzindo custo e latência.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 32</span><span>Ordenação</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>32. Uma equipe quer usar Amazon Bedrock Prompt Management para trabalhar de forma controlada com uma instrução. Coloque uma sequência plausível.</h2>
+  <ol class="options" type="A"><li>Testar/avaliar o prompt</li>
+<li>Criar ou registrar uma versão do prompt</li>
+<li>Atualizar uma nova versão quando necessário</li>
+<li>Usar a versão selecionada na aplicação</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B → A → C → D</p>
+      <p><strong>Explicação:</strong> Uma prática plausível é criar/registrar, testar, atualizar/versionar e então usar uma versão controlada na aplicação. O ponto central é o versionamento e gerenciamento de prompts.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 33</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>33. Uma equipe precisa avaliar automaticamente a qualidade de resumos gerados comparando-os com referências e está considerando uma métrica voltada à sobreposição de n-grams. Qual métrica é a mais relacionada?</h2>
+  <ol class="options" type="A"><li>ROUGE</li>
+<li>Recall de classificação binária</li>
+<li>Latência de rede</li>
+<li>Acurácia de banco de dados</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) ROUGE</p>
+      <p><strong>Explicação:</strong> ROUGE é amplamente usada para avaliar sobreposição entre texto gerado e referências em tarefas como sumarização.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 34</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>34. Qual abordagem usa outro LLM para julgar a qualidade ou aderência das respostas de um Foundation Model?</h2>
+  <ol class="options" type="A"><li>LLM-as-a-judge</li>
+<li>K-means</li>
+<li>Feature store</li>
+<li>Amazon Macie</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) LLM-as-a-judge</p>
+      <p><strong>Explicação:</strong> LLM-as-a-judge usa um modelo de linguagem avaliador para atribuir julgamentos ou pontuações às respostas de outro modelo.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 35</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>35. Uma equipe quer implementar RAG gerenciado sobre documentos corporativos usando recursos do Amazon Bedrock. Qual serviço/feature é o encaixe mais direto?</h2>
+  <ol class="options" type="A"><li>Amazon Bedrock Knowledge Bases</li>
+<li>Amazon Polly</li>
+<li>Amazon Rekognition</li>
+<li>AWS CloudTrail</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Amazon Bedrock Knowledge Bases</p>
+      <p><strong>Explicação:</strong> Knowledge Bases fornece recursos gerenciados para casos de uso de recuperação de conhecimento/RAG no ecossistema Bedrock.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Aplicações de Foundation Models">
+  <div class="meta"><span>Questão 36</span><span>Múltipla escolha</span><span>Domínio 3 — Aplicações de Foundation Models</span></div>
+  <h2>36. Qual descrição diferencia melhor Amazon Bedrock e Amazon SageMaker AI?</h2>
+  <ol class="options" type="A"><li>Bedrock é voltado a usar/implementar aplicações com Foundation Models e GenAI; SageMaker AI é uma plataforma mais ampla para desenvolver, treinar, implantar e monitorar ML</li>
+<li>Bedrock serve apenas para armazenar objetos; SageMaker apenas para DNS</li>
+<li>Ambos têm exatamente o mesmo propósito e os mesmos recursos</li>
+<li>SageMaker é exclusivamente um chatbot corporativo</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Bedrock é voltado a usar/implementar aplicações com Foundation Models e GenAI; SageMaker AI é uma plataforma mais ampla para desenvolver, treinar, implantar e monitorar ML</p>
+      <p><strong>Explicação:</strong> Essa é a distinção de alto nível mais útil para questões de eliminação: Bedrock foca em FMs/GenAI; SageMaker AI cobre o ciclo de desenvolvimento e operação de ML de forma mais ampla.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — IA responsável">
+  <div class="meta"><span>Questão 37</span><span>Múltipla escolha</span><span>Domínio 4 — IA responsável</span></div>
+  <h2>37. Um modelo apresenta taxas de erro muito diferentes entre grupos demográficos. Qual preocupação de Responsible AI está mais diretamente relacionada?</h2>
+  <ol class="options" type="A"><li>Fairness/Bias</li>
+<li>Latência de rede</li>
+<li>Throughput de armazenamento</li>
+<li>Compressão de imagem</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Fairness/Bias</p>
+      <p><strong>Explicação:</strong> Diferenças sistemáticas de desempenho entre grupos podem indicar problemas de viés e fairness.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — IA responsável">
+  <div class="meta"><span>Questão 38</span><span>Múltipla escolha</span><span>Domínio 4 — IA responsável</span></div>
+  <h2>38. Um modelo apresenta desempenho muito bom nos dados de treinamento, mas cai significativamente em dados novos. Qual problema é mais provável?</h2>
+  <ol class="options" type="A"><li>Underfitting</li>
+<li>Overfitting</li>
+<li>Embedding</li>
+<li>Tokenization</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Overfitting</p>
+      <p><strong>Explicação:</strong> Overfitting ocorre quando o modelo se ajusta excessivamente aos dados de treinamento e generaliza mal para dados não vistos.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — IA responsável">
+  <div class="meta"><span>Questão 39</span><span>Múltipla resposta</span><span>Domínio 4 — IA responsável</span></div>
+  <h2>39. Quais fatores podem representar riscos legais ou de confiança ao usar GenAI?</h2>
+  <ol class="options" type="A"><li>Possíveis alegações de violação de propriedade intelectual</li>
+<li>Saídas enviesadas</li>
+<li>Alucinações em respostas apresentadas como fatos</li>
+<li>Perda de confiança do cliente</li>
+<li>Uso de HTTPS</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A, B, C e D</p>
+      <p><strong>Explicação:</strong> O guia atual destaca riscos relacionados a propriedade intelectual, saídas enviesadas, hallucinations, confiança do cliente e riscos ao usuário final.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — IA responsável">
+  <div class="meta"><span>Questão 40</span><span>Múltipla escolha</span><span>Domínio 4 — IA responsável</span></div>
+  <h2>40. Qual prática está mais alinhada a Human-Centered Design para IA explicável?</h2>
+  <ol class="options" type="A"><li>Ocultar completamente como a IA toma decisões</li>
+<li>Incluir mecanismos de feedback do usuário e transparência sobre decisões da IA</li>
+<li>Remover todas as formas de revisão humana</li>
+<li>Avaliar apenas o custo de infraestrutura</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> B) Incluir mecanismos de feedback do usuário e transparência sobre decisões da IA</p>
+      <p><strong>Explicação:</strong> O guia revisado explicita mecanismos de feedback e transparência das decisões como exemplos de princípios de design centrado no ser humano.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — IA responsável">
+  <div class="meta"><span>Questão 41</span><span>Múltipla escolha</span><span>Domínio 4 — IA responsável</span></div>
+  <h2>41. Qual recurso ajuda a documentar características, limitações e informações relevantes sobre um modelo?</h2>
+  <ol class="options" type="A"><li>Amazon SageMaker Model Cards</li>
+<li>Amazon S3 Glacier somente</li>
+<li>Amazon Transcribe</li>
+<li>Amazon Route 53</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Amazon SageMaker Model Cards</p>
+      <p><strong>Explicação:</strong> Model Cards são usados para documentar informações sobre modelos, apoiando transparência e compreensão de suas características e limitações.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — IA responsável">
+  <div class="meta"><span>Questão 42</span><span>Correspondência</span><span>Domínio 4 — IA responsável</span></div>
+  <h2>42. Associe cada recurso ao objetivo principal.</h2>
+  <ol class="options" type="A">
+    <li>
+      <div style="display: flex;">
+        <div style="width: 50%">1. SageMaker Clarify</div>
+        <div style="width: 50%">a. Avaliar Foundation Models</div>
+      </div>
+    </li>
+    <li>
+      <div style="display: flex;">
+        <div style="width: 50%">2. Amazon Bedrock Model Evaluations</div>
+        <div style="width: 50%">b. Aplicar proteções e políticas a aplicações GenAI</div>
+      </div>
+    </li>
+    <li>
+      <div style="display: flex;">
+        <div style="width: 50%">3. Amazon Bedrock Guardrails</div>
+        <div style="width: 50%">c. Documentar informações do modelo</div>
+      </div>
+    </li>
+    <li>
+      <div style="display: flex;">
+        <div style="width: 50%">4. SageMaker Model Cards</div>
+        <div style="width: 50%">d. Detectar/avaliar viés e apoiar explicabilidade</div>
+      </div>
+    </li>
+  </ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> 1 → d; 2 → a; 3 → b; 4 → c.</p>
+      <p><strong>Explicação:</strong> Clarify está ligado a bias/explainability; Model Evaluations à avaliação de FMs; Guardrails a proteções; Model Cards à documentação transparente do modelo.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — IA responsável">
+  <div class="meta"><span>Questão 43</span><span>Múltipla escolha</span><span>Domínio 4 — IA responsável</span></div>
+  <h2>43. Qual ação contribui diretamente para melhorar a qualidade e representatividade do conjunto de dados de treinamento?</h2>
+  <ol class="options" type="A"><li>Garantir diversidade, inclusividade, fontes curadas e equilíbrio quando aplicável</li>
+<li>Aumentar a temperatura do LLM</li>
+<li>Desativar monitoramento</li>
+<li>Remover exemplos de grupos minoritários</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Garantir diversidade, inclusividade, fontes curadas e equilíbrio quando aplicável</p>
+      <p><strong>Explicação:</strong> O guia destaca inclusividade, diversidade, fontes de dados curadas e conjuntos equilibrados como características relevantes dos datasets.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 5 — Segurança, conformidade e governança">
+  <div class="meta"><span>Questão 44</span><span>Múltipla escolha</span><span>Domínio 5 — Segurança, conformidade e governança</span></div>
+  <h2>44. Qual serviço AWS é usado principalmente para definir quem pode acessar quais recursos e ações?</h2>
+  <ol class="options" type="A"><li>AWS IAM</li>
+<li>Amazon Macie</li>
+<li>AWS CloudWatch</li>
+<li>Amazon Textract</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) AWS IAM</p>
+      <p><strong>Explicação:</strong> IAM gerencia identidades, políticas e permissões de acesso aos recursos AWS.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 5 — Segurança, conformidade e governança">
+  <div class="meta"><span>Questão 45</span><span>Múltipla escolha</span><span>Domínio 5 — Segurança, conformidade e governança</span></div>
+  <h2>45. Uma aplicação precisa de gerenciamento centralizado de chaves criptográficas usadas para proteger dados. Qual serviço é o encaixe mais direto?</h2>
+  <ol class="options" type="A"><li>AWS KMS</li>
+<li>AWS CloudTrail</li>
+<li>Amazon Comprehend</li>
+<li>Amazon Lex</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) AWS KMS</p>
+      <p><strong>Explicação:</strong> AWS Key Management Service (KMS) é o serviço de gerenciamento de chaves criptográficas.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 5 — Segurança, conformidade e governança">
+  <div class="meta"><span>Questão 46</span><span>Múltipla escolha</span><span>Domínio 5 — Segurança, conformidade e governança</span></div>
+  <h2>46. Uma organização quer descobrir dados sensíveis em buckets do Amazon S3. Qual serviço é especialmente relacionado a esse objetivo?</h2>
+  <ol class="options" type="A"><li>Amazon Macie</li>
+<li>Amazon Polly</li>
+<li>AWS Lambda</li>
+<li>Amazon Personalize</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Amazon Macie</p>
+      <p><strong>Explicação:</strong> Amazon Macie ajuda a descobrir e analisar dados sensíveis armazenados no S3.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 5 — Segurança, conformidade e governança">
+  <div class="meta"><span>Questão 47</span><span>Múltipla escolha</span><span>Domínio 5 — Segurança, conformidade e governança</span></div>
+  <h2>47. Qual associação está correta?</h2>
+  <ol class="options" type="A"><li>CloudTrail → registra atividade de API/ações; CloudWatch → métricas, logs e monitoramento</li>
+<li>CloudTrail → tradução; CloudWatch → chatbot</li>
+<li>CloudTrail → armazenamento de objetos; CloudWatch → criptografia de chaves</li>
+<li>CloudTrail → embeddings; CloudWatch → fine-tuning</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) CloudTrail → registra atividade de API/ações; CloudWatch → métricas, logs e monitoramento</p>
+      <p><strong>Explicação:</strong> CloudTrail fornece histórico de chamadas/atividade da AWS; CloudWatch acompanha métricas, logs e estado operacional.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 5 — Segurança, conformidade e governança">
+  <div class="meta"><span>Questão 48</span><span>Múltipla resposta</span><span>Domínio 5 — Segurança, conformidade e governança</span></div>
+  <h2>48. Quais práticas ajudam a reduzir riscos de segurança em uma aplicação GenAI?</h2>
+  <ol class="options" type="A"><li>Validação da saída</li>
+<li>Filtragem de saída</li>
+<li>Prevenção de vazamento de dados</li>
+<li>Trilhas de auditoria e registros de interação</li>
+<li>Remover controles de acesso para facilitar testes</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A, B, C e D</p>
+      <p><strong>Explicação:</strong> O guia revisado adicionou explicitamente prevenção de vazamento, filtragem/validação de saída e trilhas/registro de interações como considerações de segurança.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 5 — Segurança, conformidade e governança">
+  <div class="meta"><span>Questão 49</span><span>Múltipla escolha</span><span>Domínio 5 — Segurança, conformidade e governança</span></div>
+  <h2>49. Em uma arquitetura com agentes, qual necessidade está mais associada a mecanismos de identidade e políticas específicos do agente?</h2>
+  <ol class="options" type="A"><li>Controlar quais identidades e ações o agente pode usar ao acessar recursos</li>
+<li>Aumentar a temperatura do modelo</li>
+<li>Converter texto em voz</li>
+<li>Medir ROUGE</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A) Controlar quais identidades e ações o agente pode usar ao acessar recursos</p>
+      <p><strong>Explicação:</strong> A revisão 1.1 adiciona AgentCore Identity e AgentCore Policy ao escopo de segurança, relacionando-os ao controle de identidade e políticas de agentes.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 5 — Segurança, conformidade e governança">
+  <div class="meta"><span>Questão 50</span><span>Múltipla resposta</span><span>Domínio 5 — Segurança, conformidade e governança</span></div>
+  <h2>50. Quais técnicas podem ser usadas para detectar ou reduzir hallucinations em aplicações GenAI?</h2>
+  <ol class="options" type="A"><li>RAG/grounding com fontes relevantes</li>
+<li>Validação da saída</li>
+<li>Confidence scoring</li>
+<li>Desativar toda avaliação do modelo</li>
+<li>Aumentar aleatoriamente a temperatura</li></ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A, B e C</p>
+      <p><strong>Explicação:</strong> O guia revisado cita RAG/grounding, validação de saída e confidence scoring como métodos para detectar ou reduzir alucinações.</p>
+    </div>
+  </details>
+</section>
+  </main>
+  <footer>
+    <p><strong>Fontes de referência:</strong></p>
+    <p><a href="https://docs.aws.amazon.com/pt_br/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html" target="_blank" rel="noopener">AWS — Guia do exame AIF-C01</a></p>
+    <p><a href="https://docs.aws.amazon.com/pt_br/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html" target="_blank" rel="noopener">AWS — Revisões do AIF-C01</a></p>
+    <p><a href="https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/" target="_blank" rel="noopener">Tutorials Dojo — Practice Exams AIF-C01 2026</a></p>
+  </footer>
+</div>
+<script>
+function updateStatus() {
+  const total = document.querySelectorAll('.answer').length;
+  const opened = document.querySelectorAll('.answer[open]').length;
+  document.getElementById('status').textContent = `${opened}/${total} respostas reveladas`;
+}
+function toggleAll(open) {
+  document.querySelectorAll('.answer').forEach(d => d.open = open);
+  updateStatus();
+}
+document.querySelectorAll('.answer').forEach(d => d.addEventListener('toggle', updateStatus));
+updateStatus();
+</script>
+</body>
+</html>
