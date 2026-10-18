@@ -69,6 +69,14 @@ Serviços complementares utilizados em cenários específicos de IA e Machine Le
 
 ---
 
+### 🧠 03 - Simulado
+
+Contém um arquivo HTML com um simulado de 50 questões, todas geradas por IA baseado em questões que existem e estão disponíveis na internet (por exemplo a prova de teste oficial da AWS com 20 questões)
+
+Para utilizar, baixe o [`simulado`](03-simulado/simulado_aws_ai_practitioner_aif_c01_2026.html) e abra-o no seu dispositivo, sem necessidade de acesso à internet.
+
+---
+
 ## 📚 Organização dos arquivos
 
 Cada diretório foi dividido em arquivos menores para facilitar o estudo.
